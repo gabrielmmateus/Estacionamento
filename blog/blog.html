@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="shortcut icon" href="img/carro.png" type="image/x-icon">
+  <title>Blog</title>
+
+  <style>
+ .noticia {
+      margin: 10px;
+      padding: 8%;
+      border: 1px solid #ccc;
+      width: 100%;
+      margin-left: -0.001%;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .conteudo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #fff;
+      padding: 20px;
+    }
+
+
+
+    .modal button {
+      margin-top: 10px;
+      background-color: #FAA510;
+    }
+
+    button {
+      margin-top: 10px;
+      background-color: #FAA510;
+    }
+
+    body{
+      margin-bottom: -12%;
+    }
+  </style>
+
+</head>
+
+<body id="body">
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FAA510;">
+    <div class="container-fluid">
+      <img src="./img/carro.png" alt="" style="width:55px">
+      <a class="navbar-brand" href="../index.html" id="nome">DREAM PARKING</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse col-5" id="mynavbar">
+        <ul class="navbar-nav me-auto" style="padding-left: 30%; font-weight: bolder;">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../contato/contato.html" style="color: #fff; font-weight: 500; ">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../blog/blog.html" style="color: #fff; font-weight: 500;">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../sobre_nos/sobre.html" style="color: #fff; font-weight: 500;">Sobre nós</a>
+          </li>
+        </ul>
+
+        
+          
+          <li class="nav">
+            <a class="nav-link text-md-center" href="../login e cadastros/login_admin.php" style="color: #FFF; font-weight: bold; margin-left: 10%;" id="login_button">Login</a>
+          </li>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+<br><br>
+
+  <!-- Blog de notícias do mais recente ao mais antigo -->
+<!-- "DIV class='noticia'" é o campo em que aparece cada notícia -->
+ 
+  <!-- NOTÍCIA 1 -->
+  <div class="noticia">
+
+    <!-- título -->
+    <h2 id="titulo"> Descontos especiais para clientes mensalistas</h2>
+
+    <!-- data de postagem da notícia -->
+    <h6 style="color: rgb(124, 123, 123);">29/03/2023</h6>
+
+      <!-- Introdução/resumo da notícia -->
+    <p id="letra">A Dream Parking está oferecendo SUPER DESCONTOS para os clientes <br>
+      mensalistas, com mega beneficios pensados especialmente em você.
+    </p>
+
+    <!-- botão que abre um modal que apresenta a notícia completa -->
+    <button class="abrir-modal" data-modal-id="modal-1">Saiba mais</button>
+  </div>
+
+  <!-- modal - Campo que apresenta a notícia completa -->
+  <div class="modal" id="modal-1">
+    <div class="conteudo">
+
+      <!-- titulo -->
+      <h2>Super desconto para clientes mensalistas</h2>
+
+      <!-- data de postagem da notícia -->
+      <h6 class="data_news" style="color: rgb(124, 123, 123);">29/03/2023</h6>
+      <br>
+
+      <!-- Matéria/notícia/texto completo -->
+      <p id="modal">A Dream Parking está oferecendo SUPER DESCONTOS para os clientes 
+        mensalistas, com mega beneficios pensados especialmente em você.
+        Haverá uma festa em comemoração ao alcance das metas, e VOCÊ está convidado! <br>
+        <img src="img/estacionamento.png" id="imagem"><br>
+        Estaremos também com descontos de até 15% em nosso estacionamento.
+        
+    </p>
+
+        <!-- botão que fecha o modal que apresenta a notícia completa -->
+      <button class="fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+   <!-- NOTÍCIA 2 -->
+  <div class="noticia">
+    <h2 id="titulo">Adivinha quem ganhou o prêmio de melhor estacionamento da cidade?</h2>
+    <h6 style="color: rgb(124, 123, 123);">11/06/2022</h6>
+    <p id="letra">Dreamparking está comemorando sua primeira 
+      premiação em toda sua história trabalhando
+      na área de estacionamentos.
+    </p>
+    <button class="abrir-modal" data-modal-id="modal-2">Saiba mais</button>
+  </div>
+
+  <div class="modal" id="modal-2">
+    <div class="conteudo">
+      <h2>Ganhamos o prêmio de melhor estacionamento</h2>
+      <h6 style="color: rgb(124, 123, 123);">11/06/2022</h6><br>
+      <p id="modal">Dreamparking está comemorando sua primeira premiação em toda sua história trabalhando
+        na área de estacionamentos. <br>
+        <img src="img/premio.png" id="imagem1"><br><br>
+        Estamos completamente gratos por tanto tempo no mercado e pelo 
+        reconhecimento, além da quantidade de clientes e parceiros conosco. 
+      </p>
+      <button class="fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+
+   <!-- NOTÍCIA 3 -->
+  <div class="noticia">
+    <h2 id="titulo">Dream Parking implementa sistema de pagamento online para maior comodidade dos clientes</h2>
+    <h6 style="color: rgb(124, 123, 123);">22/01/2022</h6>
+    <p id="letra">Nós, da dreamparking, sempre colocamos nossos clientes em primeiro lugar,
+      prezamos pela facilidade e bem estar do nosso freguês.
+    </p>
+    <button class="abrir-modal" data-modal-id="modal-3">Saiba mais</button>
+  </div>
+
+  <div class="modal" id="modal-3">
+    <div class="conteudo">
+      <h2>Para a comodidade do cliente, inserímos o sistema de pagamento online.</h2>
+      <h6 style="color: rgb(124, 123, 123);">22/01/2022</h6><br>
+      <p id="modal">Nós, da dreamparking, sempre colocamos nossos clientes em primeiro lugar,
+        prezamos pela facilidade e bem estar do nosso freguês. <br>
+        <img src="img/pagamento.png" id="imagem1"><br><br>
+        Esse foi o nosso objetivo princípal até o momento, mas agora estamos totalmente 
+        felizes por sua conclusão, nele estaremos disponibilizando o pagamento via PIX, DEBITO e
+        CREDITO.
+      </p>
+      <button class="fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+
+   <!-- NOTÍCIA 4 -->
+  <div class="noticia">
+    <h2 id="titulo">Conheça o novo programa de fidelidade da Dream Parking e ganhe benefícios exclusivos</h2>
+    <h6 style="color: rgb(124, 123, 123);">02/09/2021</h6>
+    <p id="letra">A realização desse programa consiste em nos aproximar mais de você(cliente),
+      assim nossa relação será de confiança. 
+    </p>
+    <button class="abrir-modal" data-modal-id="modal-4">Saiba mais</button>
+  </div>
+
+  <div class="modal" id="modal-4">
+    <div class="conteudo">
+      <h2>Conheça o novo programa de fidelidade da Dream Parking (+benefícios)</h2>
+      <h6 style="color: rgb(124, 123, 123);">02/09/2021</h6>
+      <p id="modal">A realização desse programa vai nos aproximar mais de você(cliente),
+        assim nossa relação será de confiança. <br>
+        <img src="img/lavagem.avif" id="imagem2"><br><br>
+        Mas confiar em o que? Ter a confiança de deixar
+        o seu carro em um local com segurança, conforto e limpeza gratis. Assim fizemos esse programa perfeitamente para você.
+        Nele está incluso: <br><br>
+        - Descontos de 10% em todos os dias estacionados durante o mês do contrato. <br>
+        - "CarSpar" Uma limpeza completa no carro.  <br>
+        - Direito a cortesias, ou seja, alguns lanches. <br>
+        - Outros 
+    </p>
+      <button class="fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+
+  <!-- NOTÍCIA 5 -->
+  <div class="noticia">
+    <h2 id="titulo">Serviço de lavagem e polimento de 
+      veículos durante o período de estacionamento</h2>
+    <h6 style="color: rgb(124, 123, 123);">01/09/2021</h6>
+    <p id="letra">Estamos oferecendo serviço de lavagem e polimento de 
+      veículos na primeira vez ao estacionar o seu carro!</p>
+    <button class="abrir-modal" data-modal-id="modal-5">Saiba mais</button>
+  </div>
+
+  <div class="modal" id="modal-5">
+    <div class="conteudo">
+      <h2>Serviço de lavagem e polimento de 
+        veículos</h2>
+      <h6 style="color: rgb(124, 123, 123);">01/09/2021</h6><br>
+      <p id="modal">Estamos oferecendo serviço de lavagem e polimento de 
+        veículos na primeira vez ao estacionar o seu carro!<br>
+        <img src="img/carrolimpa.jpg" id="imagem1"><br><br>
+        Se o cliente fizer parte associação do programa de fidelidade da dreamparking, a lavagem 
+        e o polimento do veículo será todas as vezes que você estacionar 
+        conosco! Não perca essa chance!
+      </p>
+      <button class="fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+
+
+  <!-- javascript - botões da div notícia e fechar do modal -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+
+    // botão "saiba mais" (abre o modal)
+    $(document).ready(function() {
+      $('.abrir-modal').on('click', function() {
+        var modal_id = $(this).data('modal-id');
+        $('#' + modal_id).fadeIn();
+      });
+
+
+    // botão "fechar" (fecha o modal)
+      $('.fechar-modal').on('click', function() {
+        $(this).closest('.modal').fadeOut();
+      });
+    });
+  </script>
+
+
+
+    <!-- ------- Fim do Script -------- -->
+
+                
+    
+                <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                  <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                  <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                  <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                </div>
+  
+              </div>
+  
+              
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer">
+
+    
+    <footer style="background-color: #FAA510;" class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top" id="rodape">
+      <p class="col-md-4 mb-0" id="copy" style="padding-left: 1%;">© 2023, DREAM PARKING <br>Marcas e nomes de produtos são marcas registradas de
+        seus respectivos donos. <br>
+        Trabalho acadêmico sem fins lucrativos.
+      </p>
+      
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        
+      </a>
+      
+      <ul class="nav col-mc-4 justify-content-end">
+        <li class="nav-item"><a href="../blog/blog.html" class="nav-link px-2" id="home" style="font-size: 14px; color: #FFF;">Início</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1" id="termos" style="font-size: 14px; color: #FFF;">Política de
+          Privacidade</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-4" id="ajuda" style="font-size: 14px; color: #FFF;">Ajuda</a></li>
+          
+        </ul>
+      </footer>
+    </div>
+
+
+</body>
+</html>
