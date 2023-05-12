@@ -1,0 +1,197 @@
+
+
+#rodape{
+    margin: 0;
+}
+
+#nome{
+    padding-left: 3%;
+     font-size: 30px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 415px){
+    #nav{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #login_button{
+        padding-left: 20.5%;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    #login_button{
+        padding-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 800px) {
+    #login_button{
+        padding-left: 19.5%;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    #login_button{
+        padding-left: 18%;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    #login_button{
+        padding-left: 17%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #login_button{
+        padding-left: 10%;
+    }
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    
+    #nome{
+        font-size: 20px;
+    }
+
+    #login_button{
+        padding-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    
+    #nome{
+        font-size: 17px;
+    }
+
+    #login_button{
+        padding-left: 5%;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    
+    #nome{
+        font-size: 13px;
+    }
+
+    #login_button{
+        padding-left: 3%;
+    }
+}
+
+
+
+#footer{
+    margin-top: 15%;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+#body{
+    background-color: #D9D9D9
+  
+
+}
+
+hr {
+    border-top: 1px solid #007bff;
+    width:70%;
+}
+
+a {color: #000;}
+
+
+.card{
+    background-color: #FFFFFF;
+    padding:0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius:4px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+}
+
+
+.card:hover{
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    color:black;
+}
+
+address{
+  margin-bottom: 0px;
+}
+
+
+
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+
+#div1{
+    background-color: #fff;
+    width: 60%;
+    height: 1000px;
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius: 10px;
+    
+}
+
+#canvas{
+    background-color: #FAA510;
+    width: 100%;
+    height: 4px;
+}
+
+#sobre{
+    color: #FAA510;
+    padding-left: 5%;
+    padding-top: 2%;
+    ;
+}
+
+#texto{
+    color: #FAA510;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 110%;
+    font-weight: bold;
+    
+}
+#img{
+    width: 100%;
+}
+
+@media (max-width: 320px) {
+    #div1{
+        height: 1400px;
+        
+    }
+    
+}
+@media (min-width:321px) and (max-width: 450px) {
+    #div1{
+        height: 1200px;
+        
+    }
+    
+}
+@media (min-width: 451px) and (max-width: 900px) {
+    #div1{
+        height: 950px;
+        
+    }
+    
+}

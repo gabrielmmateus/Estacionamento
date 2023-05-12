@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+#nome{
+    padding-left: 3%;
+     font-size: 30px;
+    font-weight: bold;
+}
+
+body{
+    background-color: #D9D9D9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 7%;
+}
+
+
+#fundo{
+    background-image: url(img/desconto.jpg);
+    background-size: cover;
+    margin-top: 5%;
+    width: 100%;
+    
+    position: absolute;
+   
+}
+
+
+#imagem{
+    margin-top: 5%;
+    border-radius: 45px ;
+    
+}
+
+#descricao{
+    
+    word-wrap: break-word;
+}
+
+#texto{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+   
+}
+
+
+#info{
+    margin-top: 5%;
+    margin-left: 10%;
+
+    
+}
+
+#footer{
+    margin-top: 15%;
+}
+
+#formatacao{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width: 1050px){
+   #card2{
+    font-size: 14px;
+   }
+}
+
+@media (max-width: 905px){
+    #card2{
+     font-size: 12px;
+    }
+}
+
+@media (max-width: 500px){
+    #card2{
+     font-size: 10.8px;
+    }
+}
+
+
+@media (max-width: 600px){
+    #texto{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px){
+    .title{
+        line-height: 30px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 400px){
+    .title{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+        
+    #nome{
+        font-size: 20px;
+    }
+
+    #login_button{
+        padding-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    
+    #nome{
+        font-size: 17px;
+    }
+
+    #login_button{
+        padding-left: 5%;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    
+    #nome{
+        font-size: 13px;
+    }
+
+    #login_button{
+        padding-left: 3%;
+    }
+}
+
+
+#card2{
+    width: 100%;
+    font-weight: 700;
+    margin-top: 3%;
+    text-align: center;
+  
+}
+
+
+#botao{
+    border-color: #FAA530;
+    background-color: #FAA510;
+    font-size: 30px;
+   
+    
+}
+
+@media only screen and (max-width: 770px) {
+    #botao{
+     font-size: 15px;
+    
+    }
+   }
+
+@media only screen and (max-width: 450px) {
+   #botao{
+    font-size: 6px;
+    margin-bottom: -7%;
+    
+   }
+  }
+
+
+  .wrimagecard{	
+
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.wrimagecard .fa{
+	
+    font-size: 70px;
+}
+.wrimagecard-topimage_header{
+padding: 30px;
+}
+a.wrimagecard:hover, .wrimagecard-topimage:hover {
+    box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+}
+.wrimagecard-topimage a {
+    width: 100%;
+    height: 100%;
+   
+}
+.wrimagecard-topimage_title {
+    padding: 20px 24px;
+    height: 80px;
+    padding-bottom: 0.75rem;
+  
+}
+.wrimagecard-topimage a {
+    border-bottom: none;
+    text-decoration: none;
+    color: #525c65;
+    transition: color 0.3s ease;
+}
+
+#alinhamento{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.col-md-3 {
+   
+    margin-left: 3%;
+}
+
+
+@media only screen and (max-width: 550px) {
+    #alinhamento{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    
+    }
+
+    #copy{
+        font-size: 12px;
+    }
+   }
+
+

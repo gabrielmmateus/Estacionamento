@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/carro.png" type="image/x-icon">
+  <title>DREAM PARKING</title>
+
+</head>
+
+<body id="body">
+  
+  <!-- APRESENTAÇÃO DO HEADER  ----------------------------------------------------------------------------------------------------------------------->
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FAA510;">
+    <div class="container-fluid">
+      <img src="./img/carro.png" alt="" style="width:55px">
+      <a class="navbar-brand" href="index.html" id="nome">DREAM PARKING</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse col-5" id="mynavbar">
+        <ul class="navbar-nav me-auto" style="padding-left: 30%; font-weight: bolder;">
+
+          <li class="nav-item">
+            <a class="nav-link" href="contato/contato.html" style="color: #fff; font-weight: 500; ">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog/blog.html" style="color: #fff; font-weight: 500;">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre_nos/sobre.html" style="color: #fff; font-weight: 500;">Sobre nós</a>
+          </li>
+        </ul>
+
+        
+          
+          <li class="nav justify-content-end">
+            <a class="nav-link text-md-center" href="login e cadastros/login_admin.php" style="color: #FFF; font-weight: bold; margin-left: 28%;" id="login_button">Login</a>
+          </li>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- Inserindo o carousel e Imagens -------------------------------------------------------------------------------------------------------------------------->
+
+
+  <div id="carouselExampleCaptions" class="carousel slide pointer-event" style="margin-top: 3%;" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active carousel-item-start">
+        
+          <img src="img/desconto.png" class="d-block w-100"  style=" margin: auto; max-width: 80%; max-height: 650px;">
+        
+        <div class="carousel-caption  d-md-block">
+          <a href="blog/blog.html" id="botao"  class="btn btn-outline-light  px-5" > Saiba Mais</a>
+        </div>
+        
+      </div>
+      <div class="carousel-item carousel-item-next carousel-item-start">
+        <img src="img/pagamento.png" class="d-block w-100"  style=" margin: auto;max-width: 80%; max-height: 650px;">
+        <div class="carousel-caption  d-md-block">
+          
+          <a href="blog/blog.html" id="botao"  class="btn btn-outline-light  px-5" >Saiba Mais</a>
+          
+        </div>
+       
+      </div>
+      <div class="carousel-item">
+        <img src="img/carro_fundo.png" class="d-block w-100"  style="margin: auto;max-width: 80%; max-height: 650px;">
+        <div class="carousel-caption  d-md-block">
+          <a href="blog/blog.html" id="botao"  class="btn btn-outline-light  px-5" >Saiba Mais</a>
+          
+        </div>
+       
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+ 
+
+<!-- Mensagem de boas vindas ------------------------------------------------------------------------------------------------------------------------------>
+
+
+  <div class="card" id="card2">
+    <div class="card-body">
+      É um prazer recebê-lo em nosso estacionamento. <br>Sabemos que um estacionamento de qualidade pode fazer toda a diferença na sua rotina, por isso, criamos este espaço pensando em você.
+    </div>
+  </div>
+
+
+  <h1 class="title">ESTACIONAMENTO AUTOMOTIVO</h1>
+<!--  
+  <div id="info">
+
+    <img src="img/estacionamento.jpg" width="550px"  height="440px"  class="attachment-large size-large wp-image-15355" id="imagem">
+    <div id="descricao">
+
+      <p id="texto">Estacione com segurança e tranquilidade em nosso estacionamento privativo. Temos vagas demarcadas, câmeras de segurança e monitoramento 24h para sua tranquilidade. Aproveite a comodidade de deixar seu carro em um lugar seguro e próximo às principais atrações da cidade. Economize tempo e evite o estresse de procurar vagas na rua, estacione conosco. Oferecemos preços justos e excelentes condições de uso para o seu veículo. Conte com nossa equipe treinada e experiente para ajudar em qualquer necessidade. Estacione conosco e tenha mais tempo para aproveitar seu dia sem se preocupar com seu carro. Seu veículo merece um lugar seguro e confortável, por isso oferecemos vagas cobertas e bem iluminadas. Oferecemos ainda serviços adicionais, como lavagem de carros e troca de óleo para maior comodidade. Não perca mais tempo procurando vaga, estacione conosco e tenha uma experiência tranquila e segura.
+    </div>
+    </p>
+  </div> -->
+
+  <div id="formatacao">
+
+    <div class="card"  style="width: 75%;">
+      <img class="card-img-top" src="img/estacionamento.jpg" alt="Imagem de capa do card">
+      <div class="card-body" id="texto">
+        <p class="card-text" >
+          <ul>
+            <li>Estacione com segurança e tranquilidade em nosso estacionamento privativo.</li>
+            <li>Temos vagas demarcadas, câmeras de segurança e monitoramento 24h para sua tranquilidade. </li>
+            <li>Aproveite a comodidade de deixar seu carro em um lugar seguro e próximo às principais atrações da cidade.</li>
+            <li>Economize tempo e evite o estresse de procurar vagas na rua, estacione conosco.</li>
+            <li>Oferecemos preços justos e excelentes condições de uso para o seu veículo.</li>
+            <li>Conte com nossa equipe treinada e experiente para ajudar em qualquer necessidade.</li>
+            <li>Estacione conosco e tenha mais tempo para aproveitar seu dia sem se preocupar com seu carro.</li>
+            <li>Seu veículo merece um lugar seguro e confortável, por isso oferecemos vagas cobertas e bem iluminadas.</li>
+            <li>Oferecemos ainda serviços adicionais, como lavagem de carros e troca de óleo para maior comodidade.</li>
+            <li>Não perca mais tempo procurando vaga, estacione conosco e tenha uma experiência tranquila e segura.</li>
+          </ul>         
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div id="footer">
+
+    
+    <footer style="background-color: #FAA510;" class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top" id="rodape">
+      <p class="col-md-4 mb-0" id="copy" style="padding-left: 1%;">© 2023, DREAM PARKING <br>Marcas e nomes de produtos são marcas registradas de
+        seus respectivos donos. <br>
+        Trabalho acadêmico sem fins lucrativos.
+      </p>
+      
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        
+      </a>
+      
+      <ul class="nav col-mc-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2" id="home" style="font-size: 14px; color: #FFF;">Início</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1" id="termos" style="font-size: 14px; color: #FFF;">Política de
+          Privacidade</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-4" id="ajuda" style="font-size: 14px; color: #FFF;">Ajuda</a></li>
+          
+        </ul>
+      </footer>
+    </div>
